@@ -2,9 +2,23 @@ body{
     background-color: hsl(30, 38%, 92%)
     ;
 }
-.product-box-container{
-    width: 1440px;
-    background-color:white ;}
-p{
-    font-size: 14px;
+.product-box-container{display: flex;
+    
+    background-color:white ;
+    flex-direction: row;
+    
+   }
+.box-img{display: flex;
+    width: 275px;
+    height: 375px;
+
+}    
+    
+.box2{background-color: aliceblue;
+    display: flex;}
+
+
+.img-1{
+    width: 275px;
+    height: 375px;
 }
