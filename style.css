@@ -6,19 +6,31 @@ body{
     
     background-color:white ;
     flex-direction: row;
+    border: 3px solid;
     
    }
 .box-img{display: flex;
     width: 275px;
     height: 375px;
-
-}    
+    max-width: 50px;
+    border: 2px solid ;}    
     
 .box2{background-color: aliceblue;
-    display: flex;}
+    display: block;
+    border: 4px solid;
+    width: 375px;
+    height: 375px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    }
 
 
 .img-1{
     width: 275px;
     height: 375px;
+}
+.btn-add{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
