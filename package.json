@@ -1,0 +1,16 @@
+{
+  "name": "product-preview-card-component",
+  "private": true,
+  "description": "Frontend Mentor product preview card",
+  "scripts": {
+    "check": "npm run check:html && npm run check:css && npm run check:classes",
+    "check:html": "html-validate index.html",
+    "check:css": "stylelint \"**/*.css\"",
+    "check:classes": "node scripts/check-classes.mjs"
+  },
+  "devDependencies": {
+    "html-validate": "11.16.3",
+    "stylelint": "17.16.0",
+    "stylelint-config-recommended": "18.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+name: Checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Validate HTML
+        run: npm run check:html
+      - name: Lint CSS
+        run: npm run check:css
+      - name: Match HTML classes with CSS rules
+        run: npm run check:classes
