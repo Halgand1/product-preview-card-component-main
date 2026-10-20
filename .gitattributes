@@ -1,0 +1,6 @@
+# Store text files with LF line endings so Windows and macOS edits don't
+# rewrite every line and cause conflicts.
+* text=auto eol=lf
+
+*.jpg binary
+*.png binary
